@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2장 표만들기</title>
+
+</head>
+
+<body>
+    <h1>2줄 3칸 기본 표만들기</h1>
+    <table border="1" width="50%">
+        <caption>
+            <strong>기본테이블 입니다.</strong>
+            <br>
+            2줄 3칸짜리 표 입니다.
+        </caption>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+    
+    <hr>
+
+    <h1>표에 제목 셀 만들기</h1>
+    <figure>
+        <figcaption>
+            표에 제목 셀 만들기 입니다.
+        </figcaption>
+    </figure>
+    <table border="1" width="100%">
+        <tr>
+            <th>학과</th>
+            <td>컴퓨터공학부</td>
+        </tr>
+        <tr>
+            <td>학번</td>
+            <td>202095080</td>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td>장원준</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>셀 합치기 - 3줄 4칸 표</h1>
+
+    <table border="1" width="100%">
+        <tr>
+            <td colspan="3">1,2,3</td>
+            <td rowspan="3">4,8,12</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">5,9</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <hr>
+
+
+    <h1>시간표 만들기</h1>
+
+    <table border="5" width="75%">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1교시</th>
+                <td></td>
+                <td rowspan="3" style="background-color: rgb(231, 143, 20);">
+                    C#프로그래밍<br>국 442
+                </td>
+                <td rowspan="2">컴퓨터구조 <br>국 440-2</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>2교시</th>
+                <td></td>
+                
+                <td rowspan="3">C#프로그래밍<br>국 442</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>3교시</th>
+                <td rowspan="7" style="background-color: rgb(255, 205, 232);">시스템운영<br>국 550
+                    <br>
+                    <hr>
+                    웹제작<br> 국 552
+                    <hr>
+                    컴퓨터구조<br>국 440-2
+                </td>
+                
+                <td></td>
+                <td rowspan="3">시스템운영 <br>국 550</td>
+            </tr>
+            <tr>
+                <th>4교시</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>5교시</th>
+                <td></td>
+                <td rowspan=""></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>6교시</th>
+                <td rowspan="4" style="background-color: rgb(99, 255, 82);">자바프로그래밍<br>국 550</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>7교시</th>
+                <td></td>
+                <td></td>
+                <td rowspan="3">웹제작<br>국 552</td>
+            </tr>
+            <tr>
+                <th>8교시</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>9교시</th>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">1교시 시작은 9시 30분 입니다.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
