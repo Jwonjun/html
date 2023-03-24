@@ -130,9 +130,11 @@ a, a:visited {
 
 #sns > ul {
     padding-left:0;  /* 목록 들여쓰지 않기 */
+    list-style: none;
 }
 
 #sns > ul > li {     
     display:inline-block;   /* 항목을 가로로 배열 */
     width:80px;   /* 각 항목의 너비 */
+    list-style: none;
 }
