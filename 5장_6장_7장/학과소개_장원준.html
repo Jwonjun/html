@@ -7,20 +7,29 @@
     <title>컴퓨터공학부 - 장원준</title>
 
     <style>
+        body {
+            /*background-color: rgb(127, 107, 78);*/
+            background-image: url(image/img.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
         /*전체 컨텐츠를 감싸는 div*/
         #container {
             width: 1000px; /* 너비 */
-            background-color: blanchedalmond;
+            /*background-color: rgb(255,235,205);*/
             margin: 0 auto; /* 가운데 배치 */
             padding: 10px; /* 안쪽여백 */
+            
         }
 
         /* 내용 영역 div */
         #main {
             width:1000px;
             border: 1px solid #ccc;
-            background-color: beige;
-            
+            background-color: #d2f9c680;
         }
 
         img {
@@ -55,6 +64,31 @@
         p.p1 {
             text-align: justify;
         }
+
+        p.p2 {
+            font-size: 0.8em;
+            padding: 20px;
+        }
+
+        ul {
+           font-size: 1.2em;
+           color: rgb(255, 0, 119);
+           line-height: 2em;
+           font-weight: bold;
+           list-style-type: none;
+           font-family: "나눔고딕";
+        }
+
+        ol {
+            font-size: 0.8em;
+            color: black; 
+            font-weight: normal;
+            background-color: rgba(255, 255, 255, 0.461);     
+        }
+
+        span {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -80,14 +114,14 @@
             <h2 class="title2">컴퓨터공학 전공</h2>
             <p>
                 컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고, <br>
-                사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해<br>
+                <span>사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해<br>
                 취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공<br>
             </p>
             <hr>
             <h2 class="title2">메타버스 전공</h2>
             <p>
                 프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해<br>
-                메타버스 및 게임 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을<br>
+                <span>메타버스</span> 및 <span>게임</span> 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을<br>
                 겸비한 창의적인 인력을 양성하는 전공	<br>
             </p>
             <hr>
@@ -107,7 +141,7 @@
             <hr>
 
             <!--주소 영역-->
-            <p>
+            <p class="p2">
                 (우) 46958 부산광역시 사상구 괘법동 신라대학교 국제교육관 440-1호<br>
                 TEL : 051-999-5653,5497 FAX : 051-999-5160	
             </p>
