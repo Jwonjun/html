@@ -7,6 +7,101 @@
     <title>학과소개 2 - 장원준</title>
      <link rel="stylesheet" type="text/css" href="style/layout.css">
 
+     <style>
+        article {
+            /* background-color: bisque; */
+            padding: 20px;
+            width: 95%;
+            margin-left: 0px auto;
+            margin-right: 0px auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #com1 {
+            border: 2px solid tan;
+            border-radius: 10px;
+        }
+
+        #com2 {
+            border: 4px dotted rgb(255, 120, 82);
+            border-radius: 20px;
+        }
+
+        #com3 {
+            border: 5px double rgb(255, 231, 73);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        #com4 {
+            margin-bottom : 0px;
+        }
+
+        h2{
+            font-size: 1.8em;
+            border-radius: 3px;
+            padding: 15px;
+            box-shadow: 1px 7px 6px 4px rgb(119, 119, 107);
+        }
+
+        h3 {
+            font-size: 1.3em;
+            padding : 15px 0px 15px 7px;
+            border-left: 10px solid rgb(255, 255, 152);  
+        }
+
+        p{
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 30px;
+            font-size: 15px;
+            margin: 20px;
+        }
+
+        dl {
+            line-height: 35px;
+            font-size: 15px;
+            margin-right: 30px;
+            padding-left: 30px;
+
+        }
+
+        dt {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: olive;
+        }
+
+        ul {
+            line-height: 35px;
+            font-size: 15px;
+            margin: 20px 0px 0px 0px;
+            list-style-type: none;
+        }
+        
+        #li1 {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgb(75, 158, 52);
+        }
+
+        footer {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            padding : 10px;
+            background-color: grey;
+        }
+
+        #foot1 {
+            font-weight: bold;
+            text-align: center;
+            font-size: 0.7em;
+        }
+
+     </style>
+
 </head>
 <body>
     <!--로고, 메뉴 영역-->
@@ -16,16 +111,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">학부소개</a>
+                    <a href="#com1">학부소개</a>
                 </li>
                 <li>
-                    <a href="">컴퓨터공학전공</a>
+                    <a href="#com2">컴퓨터공학전공</a>
                 </li>
                 <li>
-                    <a href="">메타버스전공</a>
+                    <a href="#com3">메타버스전공</a>
                 </li>
                 <li>
-                    <a href="">교육 목표</a>
+                    <a href="#com4">교육 목표</a>
                 </li>
             </ul>
         </nav>
@@ -34,7 +129,7 @@
     <!--학과 소개 영역-->
     <section>
         <!--학부 소개 컨텐츠 내용 영역-->
-        <article>
+        <article id = com1>
             <h2>학과 소개</h2>
             <p>
                 본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
@@ -48,7 +143,7 @@
         </article>
 
         <!--컴퓨터공학 소개 컨텐츠 내용 영역-->
-        <article>
+        <article id = com2>
             <h2>컴퓨터공학 전공</h2>
             <h3>소개</h3>
             <p>
@@ -71,7 +166,7 @@
         </article>
 
         <!--메타버스전공 소개 컨텐츠 내용 영역-->
-        <article>
+        <article id = com3>
             <h2>메타버스 전공</h2>
             <h3>소개</h3>
             <p>
@@ -98,11 +193,11 @@
         </article>
 
         <!--교육 목표 소개 컨텐츠 내용 영역-->
-        <article>
+        <article id = com4>
             <h2>교육 목표</h2>
             <p>
                 <ul> 
-                    <li>아름다운 인격을 갖춘, 4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성한다.</li>
+                    <li id="li1">아름다운 인격을 갖춘, 4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성한다.</li>
                     <ol>
                         <li>주어진 문제를 체계화하고 창의적으로 해결할 수 있는 문제 해결 능력을 함양한다.</li>
                         <li>자신의 아이디어를 체계화하여 설득력있게 표현할 수 있는 표현 능력을 배양한다.</li>
@@ -117,7 +212,7 @@
 
     <!--꼬리말 영역 : 저작권, 주소 영역-->
     <footer>
-        <p>
+        <p id="foot1">
             (우) 46958 부산광역시 사상구 괘법동 신라대학교 국제교육관 440-1호<br>
             TEL : 051-999-5653,5497 FAX : 051-999-5160	
         </p>
