@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성선택자 - 장원준</title>
+        <style>
+            ul {
+                list-style: none;
+            }
+            li {
+                display: inline-block;
+                width: 120px;
+                margin: 10px;
+            }
+            li > a {
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                padding: 5px 20px;
+            }
+
+            .flat {
+                background-color: blue;
+                color: white;
+            }
+
+            [class ~= "button"] {
+                border: 2px solid black;
+                box-shadow: rgba(0,0,0,0.4) 5px 5px;
+            }
+
+            a[title |= "us"]{
+                background : url(images/us.png) no-repeat left center;
+                padding : 5px 25px;
+            }
+
+            a[title |= "japanse"]{
+                background : url(images/jp.png) no-repeat left center;
+                font-size : 14px;
+                padding : 5px 25px;
+            }
+
+            a[title ^= "eng"] {
+                background : url(images/us.png) no-repeat left center;
+                padding : 5px 25px;
+            }
+
+            a[title ^= "chin"] {
+                background : url(images/ch.png) no-repeat left center;
+                padding : 5px 25px;
+            }
+
+            a[title ^= "jap"] {
+                background : url(images/jp.png) no-repeat left center;
+                padding : 5px 25px;
+            }
+
+            a[title $= "hwp"] {
+                background : url(images/hwp_icon.gif) no-repeat left center;
+                padding : 5px 25px;
+            }
+            a[title $= "excel"] {
+                background : url(images/excel_icon.gif) no-repeat left center;
+                padding : 5px 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>학과 소개 파일 다운 받기</h2>
+        <ul>
+            <li><a href="#" title="hwp">한글파일</a></li>
+            <li><a href="#" title="excel">엑셀파일</a></li>
+        </ul>
+    </body>
+</html>
